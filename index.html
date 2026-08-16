@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>S Akash | Software Engineer</title>
 
     <meta
         name="description"
-        content="Portfolio of S Akash — Software Engineer focused on backend platforms, automation, monitoring, and intelligent systems."
+        content="Portfolio of S Akash — Software Engineer working across systems, automation, cloud platforms, monitoring, and healthcare technology."
     >
 
     <style>
+
         /* =========================
            RESET
         ========================= */
@@ -47,11 +54,13 @@
             text-decoration: none;
         }
 
+
         /* =========================
            VARIABLES
         ========================= */
 
         :root {
+
             --blue: #2563eb;
             --blue-dark: #1d4ed8;
             --blue-light: #dff2ff;
@@ -59,16 +68,19 @@
 
             --text: #172033;
             --muted: #64748b;
+            --muted-dark: #475569;
 
             --white: #ffffff;
+
             --border: #e2e8f0;
 
             --shadow:
                 0 10px 30px rgba(15, 23, 42, 0.07);
         }
 
+
         /* =========================
-           NAVBAR
+           NAVIGATION
         ========================= */
 
         nav {
@@ -79,9 +91,11 @@
             width: 100%;
 
             background: rgba(255, 255, 255, 0.88);
+
             backdrop-filter: blur(14px);
 
-            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            border-bottom:
+                1px solid rgba(226, 232, 240, 0.8);
         }
 
         .nav-container {
@@ -107,15 +121,24 @@
 
         .nav-links {
             display: flex;
+
             gap: 24px;
+
             list-style: none;
+
             font-size: 0.9rem;
+
             color: var(--muted);
+        }
+
+        .nav-links a {
+            transition: color 0.2s ease;
         }
 
         .nav-links a:hover {
             color: var(--blue);
         }
+
 
         /* =========================
            HERO
@@ -123,6 +146,7 @@
 
         .hero {
             width: 100%;
+
             background:
                 linear-gradient(
                     135deg,
@@ -131,11 +155,12 @@
                     #e7f6ff 100%
                 );
 
-            padding: 90px 24px 80px;
+            padding: 95px 24px 85px;
 
             text-align: center;
 
-            border-bottom: 1px solid #cde7f7;
+            border-bottom:
+                1px solid #cde7f7;
         }
 
         .hero-content {
@@ -147,21 +172,26 @@
             display: inline-block;
 
             padding: 6px 14px;
+
             margin-bottom: 18px;
 
             border-radius: 999px;
 
             background: rgba(255, 255, 255, 0.7);
+
             color: var(--blue-dark);
 
             font-size: 0.85rem;
+
             font-weight: 700;
 
-            border: 1px solid rgba(37, 99, 235, 0.12);
+            border:
+                1px solid rgba(37, 99, 235, 0.12);
         }
 
         .hero h1 {
-            font-size: clamp(3rem, 9vw, 6.5rem);
+            font-size:
+                clamp(3.5rem, 9vw, 6.5rem);
 
             line-height: 0.95;
 
@@ -169,7 +199,7 @@
 
             color: #102a43;
 
-            margin-bottom: 22px;
+            margin-bottom: 25px;
         }
 
         .hero h1 span {
@@ -177,30 +207,36 @@
         }
 
         .hero-subtitle {
-            font-size: clamp(1.05rem, 2vw, 1.35rem);
+            font-size:
+                clamp(1.05rem, 2vw, 1.35rem);
 
             color: #486581;
 
-            max-width: 650px;
+            max-width: 700px;
+
             margin: auto;
 
             font-weight: 500;
         }
 
+
         /* =========================
-           CONTACT
+           CONTACT BAR
         ========================= */
 
         .contact-bar {
             max-width: 1000px;
+
             margin: -30px auto 0;
 
             position: relative;
+
             z-index: 2;
 
             background: var(--white);
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             border-radius: 18px;
 
@@ -209,8 +245,11 @@
             box-shadow: var(--shadow);
 
             display: flex;
+
             justify-content: center;
+
             align-items: center;
+
             gap: 28px;
 
             flex-wrap: wrap;
@@ -222,7 +261,9 @@
 
         .contact-item {
             display: flex;
+
             align-items: center;
+
             gap: 8px;
         }
 
@@ -230,34 +271,47 @@
             color: var(--text);
         }
 
+
         /* =========================
            SOCIAL LINKS
         ========================= */
 
         .socials {
             max-width: 900px;
+
             margin: 35px auto 0;
 
             display: flex;
+
             justify-content: center;
+
             gap: 12px;
+
             flex-wrap: wrap;
         }
 
         .social-btn {
             padding: 9px 18px;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
+
             border-radius: 999px;
 
             background: white;
 
             font-size: 0.9rem;
+
             font-weight: 600;
 
-            transition: 0.2s ease;
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease,
+                color 0.2s ease,
+                box-shadow 0.2s ease;
 
-            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+            box-shadow:
+                0 4px 15px rgba(15, 23, 42, 0.04);
         }
 
         .social-btn:hover {
@@ -271,12 +325,14 @@
                 0 8px 22px rgba(37, 99, 235, 0.12);
         }
 
+
         /* =========================
            GENERAL SECTIONS
         ========================= */
 
         section {
             max-width: 1100px;
+
             margin: auto;
 
             padding: 90px 24px;
@@ -301,7 +357,8 @@
         }
 
         .section-heading h2 {
-            font-size: clamp(2rem, 5vw, 3rem);
+            font-size:
+                clamp(2rem, 5vw, 3rem);
 
             letter-spacing: -1.5px;
 
@@ -316,6 +373,7 @@
             color: var(--muted);
         }
 
+
         /* =========================
            ABOUT
         ========================= */
@@ -323,7 +381,8 @@
         .about {
             display: grid;
 
-            grid-template-columns: 1.2fr 0.8fr;
+            grid-template-columns:
+                1.2fr 0.8fr;
 
             gap: 60px;
 
@@ -333,7 +392,7 @@
         .about-text {
             font-size: 1.05rem;
 
-            color: #475569;
+            color: var(--muted-dark);
         }
 
         .about-text p + p {
@@ -345,7 +404,8 @@
 
             background: var(--blue-pale);
 
-            border: 1px solid #dbeafe;
+            border:
+                1px solid #dbeafe;
 
             border-radius: 20px;
         }
@@ -362,18 +422,52 @@
             font-size: 0.95rem;
         }
 
+        .focus-list {
+            margin-top: 18px;
+
+            display: grid;
+
+            gap: 9px;
+
+            list-style: none;
+        }
+
+        .focus-list li {
+            color: #52667a;
+
+            font-size: 0.92rem;
+
+            padding-left: 18px;
+
+            position: relative;
+        }
+
+        .focus-list li::before {
+            content: "→";
+
+            position: absolute;
+
+            left: 0;
+
+            color: var(--blue);
+
+            font-weight: 700;
+        }
+
+
         /* =========================
-           EXPERIENCE CARD
+           EXPERIENCE
         ========================= */
 
         .experience-card {
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             border-radius: 20px;
 
-            padding: 30px;
+            padding: 32px;
 
             box-shadow: var(--shadow);
         }
@@ -387,7 +481,7 @@
 
             flex-wrap: wrap;
 
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .experience-top h3 {
@@ -398,6 +492,8 @@
             color: var(--blue);
 
             font-weight: 700;
+
+            margin-top: 2px;
         }
 
         .date {
@@ -413,8 +509,51 @@
         }
 
         .experience-card li + li {
-            margin-top: 10px;
+            margin-top: 11px;
         }
+
+        .experience-metrics {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 12px;
+
+            margin-bottom: 28px;
+        }
+
+        .metric {
+            padding: 18px;
+
+            background: #f8fafc;
+
+            border:
+                1px solid #e2e8f0;
+
+            border-radius: 14px;
+        }
+
+        .metric strong {
+            display: block;
+
+            color: var(--blue);
+
+            font-size: 1.45rem;
+
+            line-height: 1.2;
+        }
+
+        .metric span {
+            display: block;
+
+            margin-top: 4px;
+
+            color: var(--muted);
+
+            font-size: 0.78rem;
+        }
+
 
         /* =========================
            PROJECTS
@@ -434,15 +573,17 @@
 
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             border-radius: 20px;
 
             padding: 28px;
 
-            min-height: 330px;
+            min-height: 350px;
 
             display: flex;
+
             flex-direction: column;
 
             transition:
@@ -522,6 +663,7 @@
             color: var(--blue-dark);
         }
 
+
         /* =========================
            SKILLS
         ========================= */
@@ -538,7 +680,8 @@
         .skill-box {
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             border-radius: 18px;
 
@@ -566,7 +709,8 @@
 
             background: #f8fafc;
 
-            border: 1px solid #e2e8f0;
+            border:
+                1px solid #e2e8f0;
 
             border-radius: 8px;
 
@@ -575,8 +719,63 @@
             color: #475569;
         }
 
+
         /* =========================
-           ACHIEVEMENTS
+           EDUCATION
+        ========================= */
+
+        .education-card {
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 20px;
+
+            padding: 28px 30px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: flex-start;
+
+            gap: 25px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .education-card h3 {
+            font-size: 1.2rem;
+
+            margin-bottom: 5px;
+        }
+
+        .education-degree {
+            color: var(--blue);
+
+            font-weight: 700;
+        }
+
+        .education-description {
+            color: var(--muted);
+
+            margin-top: 10px;
+
+            font-size: 0.92rem;
+        }
+
+        .education-date {
+            color: var(--muted);
+
+            font-size: 0.9rem;
+
+            white-space: nowrap;
+        }
+
+
+        /* =========================
+           RECOGNITION
         ========================= */
 
         .achievements {
@@ -596,7 +795,8 @@
 
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             border-radius: 16px;
         }
@@ -608,6 +808,7 @@
             flex-shrink: 0;
 
             display: grid;
+
             place-items: center;
 
             border-radius: 10px;
@@ -619,11 +820,107 @@
             font-weight: 800;
         }
 
+        .achievement strong {
+            color: var(--text);
+        }
+
         .achievement p {
             color: var(--muted);
 
             font-size: 0.92rem;
+
+            margin-top: 3px;
         }
+
+
+        /* =========================
+           CONTACT / CTA
+        ========================= */
+
+        .contact-section {
+            text-align: center;
+
+            padding-top: 55px;
+
+            padding-bottom: 100px;
+        }
+
+        .contact-section .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .contact-section p {
+            max-width: 620px;
+
+            margin: auto;
+
+            color: var(--muted);
+
+            font-size: 1rem;
+        }
+
+        .contact-actions {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+            margin-top: 25px;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+            display: inline-block;
+
+            padding: 11px 20px;
+
+            border-radius: 999px;
+
+            font-size: 0.9rem;
+
+            font-weight: 700;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .primary-btn {
+            background: var(--blue);
+
+            color: white;
+
+            box-shadow:
+                0 8px 20px rgba(37, 99, 235, 0.18);
+        }
+
+        .primary-btn:hover {
+            background: var(--blue-dark);
+
+            transform: translateY(-2px);
+        }
+
+        .secondary-btn {
+            background: white;
+
+            color: var(--text);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .secondary-btn:hover {
+            transform: translateY(-2px);
+
+            border-color: #93c5fd;
+
+            color: var(--blue);
+        }
+
 
         /* =========================
            FOOTER
@@ -636,20 +933,21 @@
 
             text-align: center;
 
-            padding: 45px 20px;
+            padding: 40px 20px;
         }
 
         footer strong {
             color: white;
         }
 
-        footer .footer-quote {
-            margin-top: 8px;
+        footer .copyright {
+            margin-top: 7px;
 
-            font-size: 0.85rem;
+            font-size: 0.82rem;
 
             color: #64748b;
         }
+
 
         /* =========================
            RESPONSIVE
@@ -673,6 +971,11 @@
                 grid-template-columns: 1fr;
             }
 
+            .experience-metrics {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
             .hero {
                 padding-top: 70px;
             }
@@ -682,6 +985,7 @@
             }
         }
 
+
         @media (max-width: 600px) {
 
             section {
@@ -690,6 +994,7 @@
 
             .contact-bar {
                 margin-left: 15px;
+
                 margin-right: 15px;
 
                 gap: 14px;
@@ -705,16 +1010,30 @@
                 padding: 22px;
             }
 
+            .experience-metrics {
+                grid-template-columns: 1fr;
+            }
+
             .project-card {
                 min-height: auto;
+            }
+
+            .education-card {
+                flex-direction: column;
+            }
+
+            .education-date {
+                white-space: normal;
             }
         }
 
     </style>
+
 </head>
 
 
 <body>
+
 
     <!-- =========================
          NAVIGATION
@@ -725,15 +1044,35 @@
         <div class="nav-container">
 
             <a href="#top" class="logo">
-                AK<span>.</span>
+                Akash<span>.</span>
             </a>
 
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+
+                <li>
+                    <a href="#recognition">Recognition</a>
+                </li>
+
             </ul>
 
         </div>
@@ -750,7 +1089,7 @@
         <div class="hero-content">
 
             <div class="hero-kicker">
-                Software Engineer • Builder • Problem Solver
+                Software Engineer · Backend Systems · Cloud · Automation
             </div>
 
             <h1>
@@ -758,8 +1097,9 @@
             </h1>
 
             <p class="hero-subtitle">
-                Building backend platforms, automation systems,
-                monitoring solutions, and intelligent applications.
+                Building softwares that operate at scale
+                from internal platforms and automation to
+                monitoring and data-intensive systems.
             </p>
 
         </div>
@@ -774,13 +1114,24 @@
     <div class="contact-bar">
 
         <div class="contact-item">
+
             <span>✉</span>
-            <strong>akashsub2002@gmail.com</strong>
+
+            <strong>
+                akashsub2002@gmail.com
+            </strong>
+
         </div>
 
+
         <div class="contact-item">
+
             <span>☎</span>
-            <strong>+91 93152 78038</strong>
+
+            <strong>
+                +91 93152 78038
+            </strong>
+
         </div>
 
     </div>
@@ -788,7 +1139,6 @@
 
     <!-- =========================
          SOCIAL LINKS
-         All currently point to GitHub
     ========================== -->
 
     <div class="socials">
@@ -796,30 +1146,34 @@
         <a
             href="https://github.com/akash-0x7d2"
             target="_blank"
+            rel="noopener noreferrer"
             class="social-btn"
         >
             GitHub ↗
         </a>
 
+
         <a
-            href="https://github.com/akash-0x7d2"
+            href="https://www.linkedin.com/in/akash-subramanian-7aaa7121a/"
             target="_blank"
+            rel="noopener noreferrer"
             class="social-btn"
         >
             LinkedIn ↗
         </a>
 
-        <a
-            href="https://github.com/akash-0x7d2"
-            target="_blank"
-            class="social-btn"
-        >
-            Resume ↗
-        </a>
 
         <a
-            href="https://github.com/akash-0x7d2"
-            target="_blank"
+            href="Akash.md"
+            download
+            class="social-btn"
+        >
+            Resume ↓
+        </a>
+
+
+        <a
+            href="mailto:akashsub2002@gmail.com"
             class="social-btn"
         >
             Email ↗
@@ -837,10 +1191,12 @@
         <div class="section-heading">
 
             <div class="section-label">
-                About Me
+                About
             </div>
 
-            <h2>Building things that solve real problems.</h2>
+            <h2>
+                Engineering software for systems that matter.
+            </h2>
 
         </div>
 
@@ -856,19 +1212,23 @@
                     healthcare applications.
                 </p>
 
-                <p>
-                    I enjoy turning repetitive and complex operational
-                    problems into reliable software. My work spans
-                    backend engineering, automation, cloud platforms,
-                    data processing, monitoring, and full-stack
-                    application development.
-                </p>
 
                 <p>
-                    I hold a B.E. in Biomedical Engineering from
-                    PSG College of Technology, where I worked on
-                    machine learning, signal processing, image
-                    processing, and embedded systems.
+                    I enjoy working on problems where reliability,
+                    scale, and operational efficiency matter. My work
+                    has ranged from log intelligence and self-healing
+                    monitoring to cloud provisioning, application
+                    deployments, and patient-record synchronization.
+                </p>
+
+
+                <p>
+                    I started my engineering journey in Biomedical
+                    Engineering at PSG College of Technology. That
+                    background gave me exposure to machine learning,
+                    signal processing, image processing, and embedded
+                    systems before I moved deeper into software
+                    engineering.
                 </p>
 
             </div>
@@ -876,20 +1236,37 @@
 
             <div class="about-highlight">
 
-                <h3>Engineering Philosophy</h3>
+                <h3>
+                    What I work on
+                </h3>
 
                 <p>
-                    Build it. Automate it. Monitor it.
-                    Make it reliable. Then make it better.
+                    I am interested in systems where
+                    software can remove operational complexity,
+                    improve reliability, or make large-scale logical 
+                    workflows easier to manage.
                 </p>
 
-                <br>
 
-                <p>
-                    Currently exploring better ways to combine
-                    software engineering, automation, and intelligent
-                    systems.
-                </p>
+                <ul class="focus-list">
+
+                    <li>
+                        Platform & application engineering
+                    </li>
+
+                    <li>
+                        Monitoring & observability
+                    </li>
+
+                    <li>
+                        Cloud infrastructure & deployments
+                    </li>
+
+                    <li>
+                        Data processing & integration
+                    </li>
+
+                </ul>
 
             </div>
 
@@ -910,11 +1287,13 @@
                 Experience
             </div>
 
-            <h2>Professional Experience</h2>
+            <h2>
+                Professional Experience
+            </h2>
 
             <p>
-                Building software and automation systems for
-                enterprise healthcare environments.
+                Building and operating software for enterprise
+                healthcare environments.
             </p>
 
         </div>
@@ -936,12 +1315,12 @@
 
                 </div>
 
+
                 <div class="date">
                     Oct 2024 — Present
                 </div>
 
             </div>
-
 
             <ul>
 
@@ -981,7 +1360,7 @@
 
 
     <!-- =========================
-         ACADEMIC PROJECTS
+         PROJECTS
     ========================== -->
 
     <section id="projects">
@@ -992,12 +1371,14 @@
                 Selected Work
             </div>
 
-            <h2>Academic Projects</h2>
+            <h2>
+                Projects
+            </h2>
 
             <p>
-                Projects combining software engineering,
-                machine learning, biomedical systems,
-                and signal processing.
+                Engineering projects spanning machine learning,
+                biomedical systems, image processing, and embedded
+                technology.
             </p>
 
         </div>
@@ -1025,18 +1406,32 @@
                     estimation and anemia-risk classification.
                 </p>
 
+
                 <div class="project-tech">
 
-                    <span class="tag">Python</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">ESP32</span>
-                    <span class="tag">Signal Processing</span>
+                    <span class="tag">
+                        Python
+                    </span>
+
+                    <span class="tag">
+                        Machine Learning
+                    </span>
+
+                    <span class="tag">
+                        ESP32
+                    </span>
+
+                    <span class="tag">
+                        Signal Processing
+                    </span>
 
                 </div>
 
+
                 <a
-                    href="https://github.com/akash-0x7d2"
+                    href="https://github.com/Akash-0x7D2?tab=repositories"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="project-link"
                 >
                     View Project ↗
@@ -1058,24 +1453,38 @@
                 </h3>
 
                 <p>
-                    Developed a recursive depth-first search
-                    based classification system using MATLAB
-                    image processing techniques to classify
-                    all eight blood groups.
+                    Developed an image-processing pipeline in
+                    MATLAB using recursive depth-first search
+                    techniques to classify all eight blood groups
+                    from blood-smear imagery.
                 </p>
+
 
                 <div class="project-tech">
 
-                    <span class="tag">MATLAB</span>
-                    <span class="tag">Image Processing</span>
-                    <span class="tag">DFS</span>
-                    <span class="tag">Classification</span>
+                    <span class="tag">
+                        MATLAB
+                    </span>
+
+                    <span class="tag">
+                        Image Processing
+                    </span>
+
+                    <span class="tag">
+                        DFS
+                    </span>
+
+                    <span class="tag">
+                        Classification
+                    </span>
 
                 </div>
 
+
                 <a
-                    href="https://github.com/akash-0x7d2"
+                    href="https://github.com/Akash-0x7D2?tab=repositories"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="project-link"
                 >
                     View Project ↗
@@ -1093,7 +1502,7 @@
                 </div>
 
                 <h3>
-                    Intermittent Pneumatic Compression
+                    Intermittent Pneumatic Compression for DVT
                 </h3>
 
                 <p>
@@ -1103,18 +1512,32 @@
                     periodic compression and pressure sensing.
                 </p>
 
+
                 <div class="project-tech">
 
-                    <span class="tag">Embedded Systems</span>
-                    <span class="tag">Sensors</span>
-                    <span class="tag">Hardware</span>
-                    <span class="tag">Biomedical</span>
+                    <span class="tag">
+                        Embedded Systems
+                    </span>
+
+                    <span class="tag">
+                        Sensors
+                    </span>
+
+                    <span class="tag">
+                        Hardware
+                    </span>
+
+                    <span class="tag">
+                        Biomedical
+                    </span>
 
                 </div>
 
+
                 <a
-                    href="https://github.com/akash-0x7d2"
+                    href="https://github.com/Akash-0x7D2?tab=repositories"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="project-link"
                 >
                     View Project ↗
@@ -1136,10 +1559,12 @@
         <div class="section-heading">
 
             <div class="section-label">
-                Toolbox
+                Technologies
             </div>
 
-            <h2>Technologies I Work With</h2>
+            <h2>
+                Technical Skills
+            </h2>
 
         </div>
 
@@ -1149,19 +1574,51 @@
 
             <div class="skill-box">
 
-                <h3>Languages</h3>
+                <h3>
+                    Languages
+                </h3>
 
                 <div class="skill-list">
 
-                    <span class="skill">Python</span>
-                    <span class="skill">JavaScript</span>
-                    <span class="skill">SQL</span>
-                    <span class="skill">PowerShell</span>
-                    <span class="skill">C</span>
-                    <span class="skill">C++</span>
-                    <span class="skill">R</span>
-                    <span class="skill">HTML</span>
-                    <span class="skill">CSS</span>
+                    <span class="skill">
+                        Python
+                    </span>
+
+                    <span class="skill">
+                        C#
+                    </span>
+
+                    <span class="skill">
+                        JavaScript
+                    </span>
+
+                    <span class="skill">
+                        SQL
+                    </span>
+
+                    <span class="skill">
+                        C
+                    </span>
+
+                    <span class="skill">
+                        C++
+                    </span>
+
+                    <span class="skill">
+                        PowerShell
+                    </span>
+
+                    <span class="skill">
+                        R
+                    </span>
+
+                    <span class="skill">
+                        HTML
+                    </span>
+
+                    <span class="skill">
+                        CSS
+                    </span>
 
                 </div>
 
@@ -1170,17 +1627,39 @@
 
             <div class="skill-box">
 
-                <h3>Frameworks & Architecture</h3>
+                <h3>
+                    Frameworks & Data
+                </h3>
 
                 <div class="skill-list">
 
-                    <span class="skill">FastAPI</span>
-                    <span class="skill">.NET</span>
-                    <span class="skill">React</span>
-                    <span class="skill">REST APIs</span>
-                    <span class="skill">MySQL</span>
-                    <span class="skill">SQL Server</span>
-                    <span class="skill">Selenium</span>
+                    <span class="skill">
+                        .NET
+                    </span>
+
+                    <span class="skill">
+                        FastAPI
+                    </span>
+
+                    <span class="skill">
+                        React
+                    </span>
+
+                    <span class="skill">
+                        REST APIs
+                    </span>
+
+                    <span class="skill">
+                        MySQL
+                    </span>
+
+                    <span class="skill">
+                        SQL Server
+                    </span>
+
+                    <span class="skill">
+                        Selenium
+                    </span>
 
                 </div>
 
@@ -1189,16 +1668,39 @@
 
             <div class="skill-box">
 
-                <h3>Cloud & Tools</h3>
+                <h3>
+                    Cloud & Engineering
+                </h3>
 
                 <div class="skill-list">
 
-                    <span class="skill">Azure</span>
-                    <span class="skill">Git</span>
-                    <span class="skill">GitHub</span>
-                    <span class="skill">CI/CD</span>
-                    <span class="skill">GitHub Copilot</span>
-                    <span class="skill">Claude</span>
+                    <span class="skill">
+                        Azure
+                    </span>
+
+                    <span class="skill">
+                        Git
+                    </span>
+
+                    <span class="skill">
+                        GitHub
+                    </span>
+
+                    <span class="skill">
+                        CI/CD
+                    </span>
+
+                    <span class="skill">
+                        Developer Tooling
+                    </span>
+
+                    <span class="skill">
+                        GitHub Copilot
+                    </span>
+
+                    <span class="skill">
+                        Claude
+                    </span>
 
                 </div>
 
@@ -1210,10 +1712,59 @@
 
 
     <!-- =========================
-         ACHIEVEMENTS
+         EDUCATION
     ========================== -->
 
-    <section id="achievements">
+    <section id="education">
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                Education
+            </div>
+
+            <h2>
+                Academic Background
+            </h2>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <div>
+
+                <h3>
+                    PSG College of Technology
+                </h3>
+
+                <div class="education-degree">
+                    B.E. Biomedical Engineering
+                </div>
+
+                <p class="education-description">
+                    Coursework and projects spanning machine learning,
+                    signal processing, image processing, embedded
+                    systems, and biomedical instrumentation.
+                </p>
+
+            </div>
+
+
+            <div class="education-date">
+                Bachelor of Engineering
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RECOGNITION
+    ========================== -->
+
+    <section id="recognition">
 
         <div class="section-heading">
 
@@ -1221,7 +1772,9 @@
                 Recognition
             </div>
 
-            <h2>Achievements</h2>
+            <h2>
+                Recognition
+            </h2>
 
         </div>
 
@@ -1238,12 +1791,12 @@
                 <div>
 
                     <strong>
-                        Smile Award
+                        Smile Award — Acuo VNA Conflict Resolution
                     </strong>
 
                     <p>
-                        Recognized for the Acuo VNA Conflict
-                        Resolution project.
+                        Recognized for work on a conflict-resolution
+                        solution for patient-record synchronization.
                     </p>
 
                 </div>
@@ -1260,12 +1813,13 @@
                 <div>
 
                     <strong>
-                        People's Choice Award
+                        People's Choice Award — Validation Checkpoint
                     </strong>
 
                     <p>
-                        Awarded for the "Validation Checkpoint"
-                        project.
+                        Awarded for the Validation Checkpoint project
+                        developed to improve operational validation
+                        workflows.
                     </p>
 
                 </div>
@@ -1282,7 +1836,7 @@
                 <div>
 
                     <strong>
-                        National Level Prototype Presentation
+                        4th Place — National Level Prototype Presentation
                     </strong>
 
                     <p>
@@ -1300,18 +1854,64 @@
 
 
     <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact-section">
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                Contact
+            </div>
+
+            <h2>
+                Let's build something useful.
+            </h2>
+
+            <p>
+                Interested in engineering roles involving systems,
+                automation, cloud platforms, or software infrastructure?
+                I'd be happy to connect.
+            </p>
+
+        </div>
+
+
+        <div class="contact-actions">
+
+            <a
+                href="mailto:akashsub2002@gmail.com"
+                class="primary-btn"
+            >
+                Get in touch
+            </a>
+
+
+            <a
+                href="Akash_Subramanian_Resume.pdf"
+                download
+                class="secondary-btn"
+            >
+                Download Resume
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
          FOOTER
     ========================== -->
 
     <footer>
 
-        <strong>S AKASH</strong>
+        <strong>
+            S AKASH
+        </strong>
 
-        <div class="footer-quote">
-            Fall. Learn. Rebuild. Repeat.
-        </div>
-
-        <div class="footer-quote">
+        <div class="copyright">
             © 2026 S Akash
         </div>
 
@@ -1319,4 +1919,5 @@
 
 
 </body>
+
 </html>
